@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  @vite('resources/css/app.css')
   <title>Students</title>
 </head>
 <body>
-  <div>
+  <div class="m-1">
     <ul>
+      <h1 class="text-3xl underline my-1">
+       Student Tutorial
+      </h1>
+      
       @foreach ($students as $student)
         {{-- topics 1 to 3 --}}
         <li>{{ $student -> first_name }} {{ $student -> last_name }} {{ $student -> age }}</li>
